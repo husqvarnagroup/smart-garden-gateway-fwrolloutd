@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: GARDENA GmbH
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+---
+
+# This template config contains all possible keys.
+# Unless otherwise noted, the commented values represent the default values
+# that take effect if this config doesn't override them.
+#
+# Intervals are always expressed in seconds.
+
+# Allow downgrading devices
+#fota_loop: false
+
+# Sleep between one round of upload checks and the next.
+#sleep_interval: 300
+
+# The URL of the index file.
+# The default value is computed at runtime and can't be provided by this
+# template config.
+#index_url: https://localhost
+
+# Sleep between retries at initial IPC connection.
+# This will be ignored for later reconnects.
+#ipc_connect_retry_interval: 10
+
+# list of device servers to connect to
+#device_servers: ["lemonbeatd", "lwm2mserver"]
+
+# Root directory for the IPSO definitions used by LwM2M
+#ipso_registry_root_path: /var/lib/ipso_definitions/

@@ -6,8 +6,8 @@
 name = "fwrolloutd"
 version = "2.1.0"
 edition = "2021"
-repository = "git@ssh.dev.azure.com/v3/HQV-Gardena/SG-Gateway/sg-firmware-rollout"
-license-file = "../LICENSE"
+repository = "https://github.com/husqvarnagroup/smart-garden-gateway-fwrolloutd"
+license-file = "LICENSE"
 rust-version = "1.75.0"
 
 [[bin]]

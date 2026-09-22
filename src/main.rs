@@ -441,7 +441,7 @@ struct SkipReason {
     column: u32,
     /// additional data to compare
     ///
-    /// This is highly ineffecient and inexact but using PartialEq is
+    /// This is highly inefficient and inexact but using PartialEq is
     /// non-trivial: [https://users.rust-lang.org/t/how-to-support-derive-partialeq-for-dyn-partialeq/68003]
     meta: Option<Box<dyn core::fmt::Debug>>,
 }

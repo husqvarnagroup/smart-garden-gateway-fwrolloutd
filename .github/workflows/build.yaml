@@ -72,11 +72,15 @@ jobs:
         run: |
           cargo binstall cargo-sort@1.0.9 --no-confirm --disable-strategies compile
           cargo sort --check --check-format --grouped
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Find typos
         run: |
           cargo binstall typos-cli@1.29.5 --no-confirm --disable-strategies compile
           typos
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Lint shell scripts
         uses: ludeeus/action-shellcheck@00cae500b08a931fb5698e11e79bfbd38e612a38 # 2.0.0

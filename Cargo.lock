@@ -751,7 +751,6 @@ dependencies = [
  "sg-ipc",
  "tempdir",
  "tokio",
- "tokio-util",
  "tracing",
  "url",
  "wiremock",
